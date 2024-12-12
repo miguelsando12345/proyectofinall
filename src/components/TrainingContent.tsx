@@ -1,4 +1,5 @@
 import React from "react";
+import Image from "next/image"; // Importa el componente Image de Next.js
 
 const TrainingContent = () => {
   return (
@@ -14,9 +15,9 @@ const TrainingContent = () => {
             <h2 className="text-3xl font-bold mb-6">Master Your Skills</h2>
             <p className="text-lg leading-relaxed mb-4">
               Take your game to the next level with professional training.
-              Whether you're looking to improve your technical skills, tactical
-              understanding, or physical fitness, we have something for every
-              player.
+              Whether you&apos;re looking to improve your technical skills,
+              tactical understanding, or physical fitness, we have something for
+              every player.
             </p>
             <p className="text-md text-gray-400 mb-4">
               Our experienced coaches use proven methodologies to help players
@@ -25,17 +26,19 @@ const TrainingContent = () => {
             </p>
             <p className="text-md text-gray-400">
               From personalized training sessions to group workshops, we ensure
-              a balanced and enjoyable experience. Let’s build your confidence
-              and skills today!
+              a balanced and enjoyable experience. Let&apos;s build your
+              confidence and skills today!
             </p>
           </div>
 
           {/* Columna de imagen */}
           <div className="lg:w-1/2 mt-8 lg:mt-0 flex justify-center">
-            <img
+            <Image
               src="https://th.bing.com/th/id/OIP.VRYUfcp1TTW5Ps7_CpPOsgHaE7?rs=1&pid=ImgDetMain"
               alt="Training Session"
               className="rounded-lg shadow-lg w-full lg:w-3/4 object-cover"
+              width={600} // Especifica el ancho de la imagen
+              height={400} // Especifica la altura de la imagen
             />
           </div>
         </div>
@@ -47,10 +50,10 @@ const TrainingContent = () => {
           </h3>
           <p className="text-center text-lg text-gray-300 leading-relaxed">
             We believe in fostering a supportive and challenging environment
-            where players can thrive. Whether you're preparing for competitive
-            play or just starting out, our training programs are tailored to
-            suit your needs. Join us and discover the joy of growth, teamwork,
-            and achievement!
+            where players can thrive. Whether you&apos;re preparing for
+            competitive play or just starting out, our training programs are
+            tailored to suit your needs. Join us and discover the joy of growth,
+            teamwork, and achievement!
           </p>
         </div>
       </div>

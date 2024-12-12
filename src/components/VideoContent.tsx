@@ -10,16 +10,16 @@ const VideoContent = () => {
         {/* Texto motivacional */}
         <div className="lg:w-1/2 mb-8 lg:mb-0 text-center lg:text-left">
           <p className="text-lg mb-4">
-            Watch this powerful video to fuel your motivation. Whether you're
-            training hard or taking your game to the next level, remember that
-            dedication and perseverance are key. Every step you take today
-            brings you closer to victory.
+            Watch this powerful video to fuel your motivation. Whether
+            you&apos;re training hard or taking your game to the next level,
+            remember that dedication and perseverance are key. Every step you
+            take today brings you closer to victory.
           </p>
           <p className="text-md text-gray-400">
             Stay focused on your goals, keep pushing forward, and remember that
-            success is earned through hard work and relentless spirit. You're
-            capable of more than you think — so start believing and make it
-            happen!
+            success is earned through hard work and relentless spirit.
+            You&apos;re capable of more than you think — so start believing and
+            make it happen!
           </p>
         </div>
 

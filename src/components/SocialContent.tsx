@@ -1,4 +1,5 @@
 import React from "react";
+import Image from "next/image"; // Importa el componente Image de Next.js
 
 const SocialContent = () => {
   return (
@@ -11,10 +12,12 @@ const SocialContent = () => {
         <div className="flex flex-col lg:flex-row items-center lg:items-start">
           {/* Imagen a la izquierda */}
           <div className="lg:w-1/2 mb-8 lg:mb-0">
-            <img
+            <Image
               src="https://as01.epimg.net/futbol/imagenes/2021/02/11/reportajes/1613002271_264040_1613002427_noticiareportajes_grande.jpg"
               alt="Social Events"
               className="rounded-lg shadow-lg w-full object-cover"
+              width={600}
+              height={400}
             />
           </div>
 
@@ -24,15 +27,16 @@ const SocialContent = () => {
               Where Soccer Meets Friendship
             </h2>
             <p className="text-lg leading-relaxed mb-4">
-              Soccer is more than just a game – it's a way to connect with
+              Soccer is more than just a game – it&#39;s a way to connect with
               people who share your passion. At KickIt365, we bring players
               together to form lifelong friendships, both on and off the field.
             </p>
             <p className="text-md text-gray-400 mb-4">
-              Whether you're looking to expand your network, share a laugh over
-              a post-match drink, or attend fun social events, our community is
-              here for you. With a range of activities tailored for soccer
-              enthusiasts, there's always something to look forward to.
+              Whether you&#39;re looking to expand your network, share a laugh
+              over a post-match drink, or attend fun social events, our
+              community is here for you. With a range of activities tailored for
+              soccer enthusiasts, there&#39;s always something to look forward
+              to.
             </p>
             <p className="text-md text-gray-400">
               Join our vibrant community and experience the joy of camaraderie,
@@ -48,8 +52,8 @@ const SocialContent = () => {
             Upcoming Social Events
           </h3>
           <p className="text-center text-lg text-gray-300 leading-relaxed">
-            Don't miss out on our upcoming events! From casual meetups to
-            exciting tournaments, there's something for everyone. Stay
+            Don&#39;t miss out on our upcoming events! From casual meetups to
+            exciting tournaments, there&#39;s something for everyone. Stay
             connected, stay active, and make memories with KickIt365.
           </p>
         </div>

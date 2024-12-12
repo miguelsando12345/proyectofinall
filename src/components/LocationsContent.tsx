@@ -1,6 +1,7 @@
 "use client";
 
 import React from "react";
+import Image from "next/image";
 
 export default function LocationsContent() {
   const locations = [
@@ -50,10 +51,12 @@ export default function LocationsContent() {
               key={index}
               className="bg-gray-800 rounded-lg shadow-lg overflow-hidden"
             >
-              <img
+              <Image
                 src={location.image}
                 alt={location.title}
-                className="w-full h-64 object-cover"
+                className="object-cover"
+                width={800} // Ancho personalizado
+                height={400} // Altura personalizada
               />
               <div className="p-6">
                 <h2 className="text-2xl font-bold mb-4">{location.title}</h2>

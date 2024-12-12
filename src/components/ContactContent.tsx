@@ -1,6 +1,7 @@
 "use client";
 
 import React from "react";
+import Image from "next/image";
 
 export default function ContactContent() {
   return (
@@ -11,10 +12,10 @@ export default function ContactContent() {
 
         {/* Sección de Descripción */}
         <p className="text-lg text-center mb-12">
-          Have questions, suggestions, or just want to say hello? We're here to
-          help! Reach out to us and let's connect. Whether it's about joining a
-          league, coaching, or anything soccer-related, we’d love to hear from
-          you.
+          Have questions, suggestions, or just want to say hello? We&#39;re here
+          to help! Reach out to us and let&#39;s connect. Whether it&#39;s about
+          joining a league, coaching, or anything soccer-related, we’d love to
+          hear from you.
         </p>
 
         {/* Formulario de Contacto */}
@@ -81,10 +82,12 @@ export default function ContactContent() {
 
           {/* Imagen decorativa */}
           <div>
-            <img
+            <Image
               src="https://i.pinimg.com/736x/ff/63/82/ff638263c62c53b589c5d6a2d11c2959.jpg"
               alt="Contact Us"
               className="rounded-lg shadow-lg w-full lg:w-96"
+              width={384}
+              height={384}
             />
           </div>
         </div>

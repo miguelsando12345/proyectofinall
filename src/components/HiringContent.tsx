@@ -1,4 +1,5 @@
 import React from "react";
+import Image from "next/image";
 
 const HiringContent = () => {
   return (
@@ -11,10 +12,12 @@ const HiringContent = () => {
         <div className="flex flex-col lg:flex-row items-center mb-12">
           {/* Imagen a la izquierda */}
           <div className="lg:w-1/2 mb-8 lg:mb-0">
-            <img
+            <Image
               src="https://i.pinimg.com/736x/27/a7/fb/27a7fbac325631309d6d68af3cbc8f13.jpg"
               alt="Hiring"
-              className="rounded-lg shadow-lg w-full object-cover"
+              className="rounded-lg shadow-lg object-cover"
+              width={736}
+              height={1104} // Altura proporcional a la relación de la imagen
             />
           </div>
 
@@ -24,9 +27,10 @@ const HiringContent = () => {
               Be Part of Something Great
             </h2>
             <p className="text-lg leading-relaxed mb-4">
-              At KickIt365, we're always looking for passionate, talented, and
-              dedicated individuals to join our team. Whether you're a coach, an
-              organizer, or someone who loves soccer, we have a spot for you!
+              At KickIt365, we&#39;re always looking for passionate, talented,
+              and dedicated individuals to join our team. Whether you&#39;re a
+              coach, an organizer, or someone who loves soccer, we have a spot
+              for you!
             </p>
             <p className="text-md text-gray-400">
               Grow your career while helping us build an amazing community of

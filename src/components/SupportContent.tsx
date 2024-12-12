@@ -1,4 +1,5 @@
 import React from "react";
+import Image from "next/image"; // Importa el componente Image de Next.js
 
 const SupportContent = () => {
   return (
@@ -8,10 +9,12 @@ const SupportContent = () => {
         Our support system is currently under maintenance. We are working hard
         to bring it back online. Please check back later!
       </p>
-      <img
+      <Image
         src="https://via.placeholder.com/600x400"
         alt="Maintenance Illustration"
         className="rounded-lg shadow-lg mb-6"
+        width={600}
+        height={400}
       />
       <p className="text-gray-400 text-center">
         Thank you for your patience and understanding. If you have urgent

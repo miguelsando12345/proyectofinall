@@ -1,4 +1,5 @@
 import React from "react";
+import Image from "next/image";
 
 const LeaguesContent = () => {
   return (
@@ -29,10 +30,12 @@ const LeaguesContent = () => {
 
         {/* Contenedor de la imagen */}
         <div className="md:w-1/2 flex justify-center items-center">
-          <img
+          <Image
             src="https://wallpaperaccess.com/full/1398616.jpg"
             alt="Football Match"
-            className="w-full md:w-96 h-80 object-cover rounded-lg shadow-lg"
+            className="rounded-lg shadow-lg"
+            width={960} // Ancho personalizado
+            height={640} // Altura personalizada
           />
         </div>
       </div>

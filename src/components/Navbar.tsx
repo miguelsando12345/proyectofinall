@@ -1,5 +1,6 @@
 import React from "react";
-import Link from "next/link"; // Importa Link de Next.js para navegación
+import Link from "next/link";
+import Image from "next/image"; // Importa el componente Image de Next.js
 
 const Navbar = () => {
   return (
@@ -7,10 +8,12 @@ const Navbar = () => {
       <div className="container mx-auto flex justify-between items-center">
         {/* Logo principal a la izquierda */}
         <Link href="/">
-          <img
+          <Image
             src="https://static.vecteezy.com/system/resources/previews/023/579/934/non_2x/illustration-of-soccer-logo-it-s-for-champion-concept-png.png"
             alt="Main Logo"
-            className="h-12 cursor-pointer"
+            className="cursor-pointer"
+            width={48}
+            height={48}
           />
         </Link>
 
@@ -83,10 +86,12 @@ const Navbar = () => {
             target="_blank"
             rel="noopener noreferrer"
           >
-            <img
+            <Image
               src="https://static.vecteezy.com/system/resources/previews/017/221/797/original/facebook-logo-transparent-background-free-png.png"
               alt="Facebook Logo"
-              className="h-10 w-10 rounded-full border-2 border-white hover:shadow-lg"
+              className="rounded-full border-2 border-white hover:shadow-lg"
+              width={40}
+              height={40}
             />
           </a>
           <a
@@ -94,10 +99,12 @@ const Navbar = () => {
             target="_blank"
             rel="noopener noreferrer"
           >
-            <img
+            <Image
               src="https://freelogopng.com/images/all_img/1690643591twitter-x-logo-png.png"
               alt="X (Twitter) Logo"
-              className="h-10 w-10 rounded-full border-2 border-white hover:shadow-lg"
+              className="rounded-full border-2 border-white hover:shadow-lg"
+              width={40}
+              height={40}
             />
           </a>
           <a
@@ -105,10 +112,12 @@ const Navbar = () => {
             target="_blank"
             rel="noopener noreferrer"
           >
-            <img
+            <Image
               src="https://static.vecteezy.com/system/resources/previews/018/930/413/large_2x/instagram-logo-instagram-icon-transparent-free-png.png"
               alt="Instagram Logo"
-              className="h-10 w-10 rounded-full border-2 border-white hover:shadow-lg"
+              className="rounded-full border-2 border-white hover:shadow-lg"
+              width={40}
+              height={40}
             />
           </a>
         </div>

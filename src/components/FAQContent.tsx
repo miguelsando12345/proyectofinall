@@ -1,4 +1,5 @@
 import React from "react";
+import Image from "next/image";
 
 const FAQContent = () => {
   return (
@@ -13,10 +14,12 @@ const FAQContent = () => {
         <div className="flex flex-col lg:flex-row items-center mb-12">
           {/* Imagen a la izquierda */}
           <div className="lg:w-1/2 mb-8 lg:mb-0">
-            <img
+            <Image
               src="https://vignette.wikia.nocookie.net/althistory/images/a/ac/Partido_F%C3%BAtbol.jpg/revision/latest/scale-to-width-down/2000?cb=20150629180347&path-prefix=es"
               alt="Soccer Game"
-              className="rounded-lg shadow-lg w-full object-cover"
+              className="rounded-lg shadow-lg object-cover"
+              width={2000}
+              height={1125}
             />
           </div>
 
@@ -27,12 +30,13 @@ const FAQContent = () => {
             </h2>
             <p className="text-lg leading-relaxed mb-4">
               At KickIt365, we understand that questions arise when joining a
-              new community or participating in new activities. That’s why we’ve
-              compiled this FAQ to help you navigate with ease.
+              new community or participating in new activities. That&#39;s why
+              we&#39;ve compiled this FAQ to help you navigate with ease.
             </p>
             <p className="text-md text-gray-400">
-              If you have additional questions, feel free to contact us. We're
-              here to ensure your experience is seamless and enjoyable!
+              If you have additional questions, feel free to contact us.
+              We&#39;re here to ensure your experience is seamless and
+              enjoyable!
             </p>
           </div>
         </div>
@@ -58,7 +62,7 @@ const FAQContent = () => {
               </h4>
               <p className="text-gray-300">
                 Basic soccer gear includes cleats, shin guards, and a ball.
-                We'll provide uniforms and other necessary items.
+                We&#39;ll provide uniforms and other necessary items.
               </p>
             </li>
             <li>
